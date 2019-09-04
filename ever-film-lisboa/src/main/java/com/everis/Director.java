@@ -1,9 +1,10 @@
 package com.everis;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Director extends Pessoa {
 
-	private String ProductionCompany;
+	private String productionCompany;
 	private List<String> filmografia;
 	/**
 	 * 
@@ -12,26 +13,28 @@ public class Director extends Pessoa {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	/**
-	 * @param nome
-	 * @param sobrenome
-	 * @param idade
-	 */
-	public Director(String nome, String sobrenome, int idade) {
+	
+	public Director(String nome, String sobrenome, int idade, String productionCompany,ArrayList<String> filmografia) {
 		super(nome, sobrenome, idade);
+		this.productionCompany=productionCompany;
+		 this.filmografia = new ArrayList<String>();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public void addfilmografia(String filmogr ) {
+        filmografia.add(filmogr);
+    }
 	/**
 	 * @return the productionCompany
 	 */
 	public String getProductionCompany() {
-		return ProductionCompany;
+		return productionCompany;
 	}
 	/**
 	 * @param productionCompany the productionCompany to set
 	 */
-	public void setProductionCompany(String productionCompany) {
-		ProductionCompany = productionCompany;
+	public void setProductionCompany(String productionComp) {
+		productionCompany = productionComp;
 	}
 	/**
 	 * @return the filmografia

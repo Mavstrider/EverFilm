@@ -1,6 +1,10 @@
 package com.everis;
 
-public class User extends Pessoa {
+import com.everis.interfaces.IUsuario;
+
+public class User extends Pessoa implements IUsuario {
+	
+	private 
 
 	public User() {
 		super();
@@ -11,6 +15,12 @@ public class User extends Pessoa {
 		super(nome, sobrenome, idade);
 		// TODO Auto-generated constructor stub
 	}
+
+	public Double getAverageRating() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	
 
 }
