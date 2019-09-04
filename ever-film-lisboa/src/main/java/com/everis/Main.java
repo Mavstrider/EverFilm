@@ -1,8 +1,6 @@
 package com.everis;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Hello world!
@@ -18,8 +16,26 @@ public class Main {
 		 this.oscarNominations = new ArrayList<Integer>(oscarn);
 		 this.eactor=eactor;
          */
-//        oscarnomlist.add
-        Integer[] array = new Integer[] {1,2,3};
-        Actor a = new Actor("a","b", 18,new ArrayList<Integer>(Arrays.asList(array)),TipoActor.MAIN);
+//      actor
+        ArrayList<Integer>oscarnomlist= new ArrayList<Integer>();
+        oscarnomlist.add(1981);
+        oscarnomlist.add(1982);
+        oscarnomlist.add(1983);
+        oscarnomlist.add(1984);
+        Actor a = new Actor("a","b", 18,oscarnomlist,TipoActor.MAIN);
+        System.out.println(a.getNome()+a.getSobrenome()+a.getIdade()+a.getOscarNominations()+a.getEactor());
+/*Director
+ * super(nome, sobrenome, idade);
+ * 	*this.productionCompany=productionCompany;
+ *   this.filmografia = new ArrayList<String>();
+ */
+       
+        ArrayList<String>list= new ArrayList<String>();
+        list.add("abc");
+        list.add("bcd");
+        list.add("cde");
+        list.add("def");
+        Director d = new Director("d","e", 68,"Univel",list);
+        System.out.println(d.getNome()+d.getSobrenome()+d.getIdade()+d.getProductionCompany()+d.getFilmografia());
     }
 }

@@ -17,7 +17,7 @@ public class Director extends Pessoa {
 	public Director(String nome, String sobrenome, int idade, String productionCompany,ArrayList<String> filmografia) {
 		super(nome, sobrenome, idade);
 		this.productionCompany=productionCompany;
-		 this.filmografia = new ArrayList<String>();
+		 this.filmografia = filmografia;
 		// TODO Auto-generated constructor stub
 	}
 	
