@@ -48,6 +48,13 @@ public class Director extends Pessoa {
 	public void setFilmografia(List<String> filmografia) {
 		this.filmografia = filmografia;
 	}
+
+	@Override
+	public String toString() {
+		
+		return "Director [productionCompany=" + productionCompany + ", filmografia=" + filmografia + ", getNome()="
+				+ getNome() + ", getSobrenome()=" + getSobrenome() + ", getIdade()=" + getIdade() + "]";
+	}
 	
 	
 	

@@ -13,7 +13,7 @@ public class Actor extends Pessoa {
 
 	public Actor(String nome, String sobrenome, int idade,List<Integer> oscarn,TipoActor eactor) {
 		super(nome, sobrenome, idade);
-		 this.oscarNominations = new ArrayList<Integer>(oscarn);
+		 this.oscarNominations = new ArrayList<Integer>();
 		 this.eactor=eactor;
 		
 		// TODO Auto-generated constructor stub
@@ -51,6 +51,12 @@ public class Actor extends Pessoa {
 	 */
 	public void setEactor(TipoActor eactor) {
 		this.eactor = eactor;
+	}
+
+	@Override
+	public String toString() {
+		return "Actor [oscarNominations=" + oscarNominations + ", eactor=" + eactor + ", getNome()=" + getNome()
+				+ ", getSobrenome()=" + getSobrenome() + ", getIdade()=" + getIdade() + "]";
 	}
 
 	

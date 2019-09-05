@@ -18,10 +18,7 @@ public class Filme implements IFilme {
 	private int quality; 
 	private Director director;
 	private List<Actor>cast;
-	private enum  filmType{
-		Comedy, Thriller, Cartoon,Drama;
-		 }
-	
+	private FilmType  filmType;
 	
 	/**
 	 * @param title
@@ -39,9 +36,14 @@ public class Filme implements IFilme {
 		this.cast = cast;
 	}
 	
+	
+
+    
+	
 	/**
 	 * @return the title
 	 */
+	
 	public String getTitle() {
 		return title;
 	}
@@ -109,8 +111,20 @@ public class Filme implements IFilme {
 		this.cast = cast;
 	}
 	
-	
-	
+	/**
+	 * @return the filmType
+	 */
+	public FilmType getFilmType() {
+		return filmType;
+	}
+
+	/**
+	 * @param filmType the filmType to set
+	 */
+	public void setFilmType(FilmType filmType) {
+		this.filmType = filmType;
+	}
+
 	public String toString() {
 	 return title+ ", "+year +". "+ getQualityString(); 	
 	}
@@ -148,6 +162,7 @@ public class Filme implements IFilme {
 		return valorqual;
 	}
 
+	
 	
 }
 	
